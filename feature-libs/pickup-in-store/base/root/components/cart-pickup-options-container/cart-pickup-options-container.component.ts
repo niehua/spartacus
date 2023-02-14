@@ -14,11 +14,11 @@ import {
 } from '@angular/core';
 import { ActiveCartFacade, Cart, OrderEntry } from '@spartacus/cart/base/root';
 import { CmsService, Page } from '@spartacus/core';
-import { PreferredStoreService } from '@spartacus/pickup-in-store/base/core';
 import {
   PickupLocationsSearchFacade,
   PickupOption,
   PickupOptionFacade,
+  PreferredStoreFacade,
   RequiredDeepPath,
 } from '@spartacus/pickup-in-store/base/root';
 import {
@@ -105,7 +105,7 @@ export class CartPickupOptionsContainerComponent implements OnInit {
     protected launchDialogService: LaunchDialogService,
     protected pickupLocationsSearchService: PickupLocationsSearchFacade,
     protected pickupOptionFacade: PickupOptionFacade,
-    protected preferredStoreService: PreferredStoreService,
+    protected preferredStoreService: PreferredStoreFacade,
     protected vcr: ViewContainerRef,
     protected cmsService: CmsService,
     @Optional() protected outlet: OutletContextData<OrderEntry>

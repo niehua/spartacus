@@ -4,7 +4,6 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-export * from './cart-pickup-options-container/index';
 export * from './checkout-pickup-in-store-details/index';
 export * from './my-preferred-store/index';
 export * from './order-confirmation-pickup-in-store-details/index';

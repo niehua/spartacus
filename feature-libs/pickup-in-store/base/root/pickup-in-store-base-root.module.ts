@@ -7,7 +7,8 @@
 import { NgModule } from '@angular/core';
 import { CmsConfig, provideDefaultConfigFactory } from '@spartacus/core';
 import {} from '@spartacus/pickup-in-store/base/components';
-import { CartPickupOptionsContainerModule, PdpPickupOptionsContainerModule } from '../components/container/index';
+import {  PdpPickupOptionsContainerModule } from '../components/container/index';
+import { CartPickupOptionsContainerModule } from './components/index';
 import {
   PICKUP_IN_STORE_CORE_FEATURE,
   PICKUP_IN_STORE_FEATURE,

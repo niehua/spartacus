@@ -6,10 +6,8 @@
 
 import { Component, Input, OnInit, Optional } from '@angular/core';
 
-import {
-  PointOfServiceNames,
-  PreferredStoreService,
-} from '@spartacus/pickup-in-store/base/core';
+import { PointOfServiceNames } from '@spartacus/pickup-in-store/base/core';
+import { PreferredStoreFacade } from '@spartacus/pickup-in-store/base/root';
 import { ICON_TYPE, OutletContextData } from '@spartacus/storefront';
 
 @Component({
@@ -23,7 +21,7 @@ export class SetPreferredStoreComponent implements OnInit {
   public storeSelected$ = this.preferredStoreService.getPreferredStore$();
 
   constructor(
-    protected preferredStoreService: PreferredStoreService,
+    protected preferredStoreService: PreferredStoreFacade,
     @Optional() protected outlet: OutletContextData<PointOfServiceNames>
   ) {}
 
