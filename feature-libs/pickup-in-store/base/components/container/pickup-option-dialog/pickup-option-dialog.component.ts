@@ -24,10 +24,10 @@ import {
   ICON_TYPE,
   LaunchDialogService,
 } from '@spartacus/storefront';
+import { cartWithIdAndUserId } from '@spartacus/pickup-in-store/base/root';
 
 import { Observable, Subscription } from 'rxjs';
 import { filter, map, take, tap } from 'rxjs/operators';
-import { cartWithIdAndUserId } from '../../../root/components/cart-pickup-options-container/cart-pickup-options-container.component';
 
 /**
  * The dialog box to select the pickup location for a product.

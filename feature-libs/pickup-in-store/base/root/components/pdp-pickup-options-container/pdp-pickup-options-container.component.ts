@@ -13,9 +13,7 @@ import {
   ViewContainerRef,
 } from '@angular/core';
 import { Product } from '@spartacus/core';
-import {
-  getProperty,
-} from '@spartacus/pickup-in-store/base/core';
+import { getProperty } from '@spartacus/pickup-in-store/base/core';
 import {
   IntendedPickupLocationFacade,
   PickupOption,

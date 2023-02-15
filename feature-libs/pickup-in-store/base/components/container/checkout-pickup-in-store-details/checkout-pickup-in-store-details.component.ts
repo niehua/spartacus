@@ -6,6 +6,7 @@
 
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { DeliveryPointsService } from '../../services/delivery-points.service';
+
 @Component({
   selector: 'cx-checkout-pick-up-in-store-details',
   templateUrl: 'checkout-pickup-in-store-details.component.html',

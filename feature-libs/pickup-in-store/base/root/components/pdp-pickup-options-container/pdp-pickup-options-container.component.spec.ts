@@ -18,9 +18,9 @@ import {
 import { MockPreferredStoreService } from 'feature-libs/pickup-in-store/core/services/preferred-store.service.spec';
 import { Observable, of, Subscription } from 'rxjs';
 import { MockIntendedPickupLocationService } from '../../../core/facade/intended-pickup-location.service.spec';
-import { PickupOptionsStubComponent } from '../../presentational/pickup-options/pickup-options.component.spec';
-import { CurrentLocationService } from '../../services/current-location.service';
-import { MockLaunchDialogService } from '../pickup-option-dialog/pickup-option-dialog.component.spec';
+import { PickupOptionsStubComponent } from '../../../components/presentational/pickup-options/pickup-options.component.spec';
+import { CurrentLocationService } from '../../../components/services/current-location.service';
+import { MockLaunchDialogService } from '../../../components/container/pickup-option-dialog/pickup-option-dialog.component.spec';
 import { PdpPickupOptionsContainerComponent } from './pdp-pickup-options-container.component';
 
 import createSpy = jasmine.createSpy;

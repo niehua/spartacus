@@ -18,6 +18,6 @@ import { PickupInStoreOccModule } from '@spartacus/pickup-in-store/base/occ';
 })
 export class PickupInStoreBaseModule {
   constructor() {
-    console.log('~~~~~~~Base Module Loaded')
+    console.log('~~~~~~~Base Module Loaded');
   }
 }

@@ -7,8 +7,8 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { CartOutlets } from '@spartacus/cart/base/root';
+import { PickupOptionsModule } from '@spartacus/pickup-in-store/base/components';
 import { OutletPosition, provideOutlet } from '@spartacus/storefront';
-import { PickupOptionsModule } from '../../../components/presentational/index';
 
 import { CartPickupOptionsContainerComponent } from './cart-pickup-options-container.component';
 
