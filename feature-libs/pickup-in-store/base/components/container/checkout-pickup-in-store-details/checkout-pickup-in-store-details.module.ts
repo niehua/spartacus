@@ -16,7 +16,7 @@ import { CheckoutPickUpInStoreDetailsComponent } from './checkout-pickup-in-stor
     PickUpItemsDetailsModule,
     ConfigModule.withConfig({
       cmsComponents: {
-        CheckoutPickupInStoreDetails: {
+        PickupInStoreCheckoutComponent: {
           component: CheckoutPickUpInStoreDetailsComponent,
         },
       },
