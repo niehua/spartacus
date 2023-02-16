@@ -6,8 +6,9 @@
 
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { CartOutlets } from '@spartacus/cart/base/root';
-import { DeliveryPointOfService } from '@spartacus/pickup-in-store/base/root';
+
 import { ICON_TYPE } from '@spartacus/storefront';
+import { DeliveryPointOfService } from 'feature-libs/pickup-in-store/base/root/model';
 import { Observable } from 'rxjs';
 @Component({
   selector: 'cx-pick-up-in-store-items-details',

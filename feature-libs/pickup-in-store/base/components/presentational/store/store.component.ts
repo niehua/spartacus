@@ -6,8 +6,8 @@
 
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { PointOfServiceStock } from '@spartacus/core';
-import { storeHasStock } from '@spartacus/pickup-in-store/base/core';
 import { ICON_TYPE } from '@spartacus/storefront';
+import { storeHasStock } from 'feature-libs/pickup-in-store/base/core/utils';
 
 /**
  * A store in the store list including address, opening times, stock level, and

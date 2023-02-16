@@ -7,7 +7,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActiveCartFacade, OrderEntry } from '@spartacus/cart/base/root';
 import { PointOfService } from '@spartacus/core';
-import { PickupLocationsSearchFacade } from '@spartacus/pickup-in-store/base/root';
+import { PickupLocationsSearchFacade } from 'feature-libs/pickup-in-store/base/root/facade';
 import { combineLatest } from 'rxjs';
 import { filter, map, mergeMap, take, tap } from 'rxjs/operators';
 

@@ -12,16 +12,10 @@ import {
   ViewChild,
   ViewContainerRef,
 } from '@angular/core';
-import { ActiveCartFacade, Cart, OrderEntry } from '@spartacus/cart/base/root';
+import { ActiveCartFacade, OrderEntry } from '@spartacus/cart/base/root';
 import { CmsService, Page } from '@spartacus/core';
-import {
-  cartWithIdAndUserId,
-  PickupLocationsSearchFacade,
-  PickupOption,
-  PickupOptionFacade,
-  PreferredStoreFacade,
-  RequiredDeepPath,
-} from '@spartacus/pickup-in-store/base/root';
+import { cartWithIdAndUserId } from '@spartacus/pickup-in-store/base/root';
+
 import {
   LaunchDialogService,
   LAUNCH_CALLER,
@@ -38,6 +32,13 @@ import {
   tap,
   withLatestFrom,
 } from 'rxjs/operators';
+import {
+  PickupLocationsSearchFacade,
+  PickupOptionFacade,
+  PreferredStoreFacade,
+} from '../../../root/facade';
+import { PickupOption } from '../../../root/model';
+import { RequiredDeepPath } from '../../../root/utils/type-utils';
 
 type OrderEntryRequiredFields =
   | 'entryNumber'
@@ -63,7 +64,6 @@ export function orderEntryWithRequiredFields(
     orderEntry.product.availableForPickup !== undefined
   );
 }
-
 
 /**
  * A container component of the pair of the pickup options radio buttons for cart entry.

@@ -9,15 +9,16 @@ import {
   Page,
   RoutingService,
 } from '@spartacus/core';
-import { StoreModule } from '@spartacus/pickup-in-store/base/components';
+
 import { PreferredStoreService } from '@spartacus/pickup-in-store/base/core';
 import { StoreFinderService } from '@spartacus/storefinder/core';
 import { CardModule, IconTestingModule } from '@spartacus/storefront';
-import { MockPickupLocationsSearchService } from 'feature-libs/pickup-in-store/core/facade/pickup-locations-search.service.spec';
-import { MockPreferredStoreService } from 'feature-libs/pickup-in-store/core/services/preferred-store.service.spec';
-import { PickupLocationsSearchFacade } from 'feature-libs/pickup-in-store/root/facade';
+import { MockPickupLocationsSearchService } from 'feature-libs/pickup-in-store/base/core/facade/pickup-locations-search.service.spec';
+import { MockPreferredStoreService } from 'feature-libs/pickup-in-store/base/core/services/preferred-store.service.spec';
+import { PickupLocationsSearchFacade } from 'feature-libs/pickup-in-store/base/root/facade';
 import { MockStoreFinderService } from 'feature-libs/storefinder/components/abstract-store-item/abstract-store-item.component.spec';
 import { Observable, of } from 'rxjs';
+import { StoreModule } from '../../presentational/store/store.module';
 import { MyPreferredStoreComponent } from './my-preferred-store.component';
 
 class MockRoutingService implements Partial<RoutingService> {

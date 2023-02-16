@@ -5,7 +5,7 @@
  */
 
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { LocationSearchParams } from '@spartacus/pickup-in-store/base/root';
+import { LocationSearchParams } from 'feature-libs/pickup-in-store/base/root/model';
 import { CurrentLocationService } from '../../services/current-location.service';
 
 /**

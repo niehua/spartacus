@@ -12,9 +12,9 @@ import {
   MetaReducer,
 } from '@ngrx/store';
 import { StateUtils } from '@spartacus/core';
-
-import { StockLevelActions } from '../../actions/index';
+import { StockLevelActions } from '../../actions';
 import { StockLevelState, StockState, STOCK_DATA } from '../../stock-state';
+
 import { browserLocationReducer } from './browser-location.reducer';
 import { hideOutOfStockReducer } from './hide-out-of-stock.reducer';
 import { stockAtStoreReducer, stockReducer } from './stock-level.reducer';

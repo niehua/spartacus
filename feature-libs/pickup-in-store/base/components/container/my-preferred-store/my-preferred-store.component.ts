@@ -11,9 +11,10 @@ import {
   PointOfService,
   RoutingService,
 } from '@spartacus/core';
-import { PointOfServiceNames } from '@spartacus/pickup-in-store/base/core';
+
 import {
   PickupLocationsSearchFacade,
+  PointOfServiceNames,
   PreferredStoreFacade,
 } from '@spartacus/pickup-in-store/base/root';
 import { StoreFinderService } from '@spartacus/storefinder/core';

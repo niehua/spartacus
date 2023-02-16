@@ -14,6 +14,7 @@ import {
 import { ActiveCartFacade } from '@spartacus/cart/base/root';
 import {
   AugmentedPointOfService,
+  cartWithIdAndUserId,
   IntendedPickupLocationFacade,
   LocationSearchParams,
   PickupLocationsSearchFacade,
@@ -24,7 +25,6 @@ import {
   ICON_TYPE,
   LaunchDialogService,
 } from '@spartacus/storefront';
-import { cartWithIdAndUserId } from '@spartacus/pickup-in-store/base/root';
 
 import { Observable, Subscription } from 'rxjs';
 import { filter, map, take, tap } from 'rxjs/operators';

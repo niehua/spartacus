@@ -15,19 +15,19 @@ import {
 import { Product } from '@spartacus/core';
 import { getProperty } from '@spartacus/pickup-in-store/base/core';
 import {
-  IntendedPickupLocationFacade,
-  PickupOption,
-  PickupOptionFacade,
-  RequiredDeepPath,
-  PreferredStoreFacade,
-} from '@spartacus/pickup-in-store/base/root';
-import {
   CurrentProductService,
   LaunchDialogService,
   LAUNCH_CALLER,
 } from '@spartacus/storefront';
 import { combineLatest, iif, Observable, of, Subscription } from 'rxjs';
 import { filter, map, startWith, switchMap, take, tap } from 'rxjs/operators';
+import {
+  IntendedPickupLocationFacade,
+  PickupOptionFacade,
+  PreferredStoreFacade,
+} from '../../../root/facade';
+import { PickupOption } from '../../../root/model';
+import { RequiredDeepPath } from '../../../root/utils/type-utils';
 
 /** Custom type guard to ensure we have a product a defined code */
 function isProductWithCode(

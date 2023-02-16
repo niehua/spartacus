@@ -4,5 +4,5 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-export * from './cart-pickup-options-container/index';
-export * from './pdp-pickup-options-container/index';
+// export * from '../../components/container/cart-pickup-options-container/index';
+// export * from '../../components/container/pdp-pickup-options-container/index';
